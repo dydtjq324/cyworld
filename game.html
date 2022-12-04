@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/game.css" />
+    <script src="./game.js"></script>
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header">
+        <div class="header__title">
+          <div class="title">GAME</div>
+          <div class="subtitle">today choice</div>
+        </div>
+        <div class="divideLine"></div>
+      </div>
+      <div class="game__container">
+        <img src="./images/word.png" alt="" />
+        <div class="game__title">끝말잇기</div>
+        <div class="game__subtitle">
+          제시어 : <span id="word">싸이월드</span>
+        </div>
+        <div class="word__text">
+          <input
+            class="textbox"
+            placeholder="단어를 입력하세요"
+            id="myword"
+            type="text"
+          />
+          <button class="search" onclick="startWord()">입력</button>
+        </div>
+        <div id="result" class="word__result">결과!</div>
+      </div>
+      <div class="game__container">
+        <img src="./images/lotto.png" alt="" />
+        <div class="game__title">lotto</div>
+        <div class="game__subtitle">
+          버튼을 누르세요 <span id="word"></span>
+        </div>
+        <div class="game__lotto__number">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+        </div>
+        <button class="game__lotto__button">추첨</button>
+      </div>
+    </div>
+  </body>
+</html>
